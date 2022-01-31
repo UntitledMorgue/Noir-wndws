@@ -878,62 +878,11 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 /* Titlebar */
 .titleBar-1it3bQ {
   justify-content: start;
-  flex-direction: row;
   height: 30px;
 } 
 .wordmarkWindows-2dq6rw {
  background-color:rgb(2, 2, 2);
 }
-/* Maximize, Minimize, Close Buttons */
-.titleBar-1it3bQ > :not(:first-child) {
-  margin: 5px 0 0px -1px;
-  border-radius: 5px;
-}
-.winButton-3UMjdg > svg {
-  display: none;
-}
-.winButton-3UMjdg:hover {
-  background-color: var(--background-teritary);
-}
-.winButton-3UMjdg {
-  pointer-events: none;
-  transform:translateX(3px)!important;
-}
-.winButton-3UMjdg::after {
-  content: "";
-  padding: 7px;
-  border-radius: 50px;
-  pointer-events: fill;
-}
-/* Close Button */
-.winButtonClose-3Q8ZH5 {
-  margin-right: 3px;
-}
-.winButtonClose-3Q8ZH5::after {
-  background-color: #FF605C;
-}
-.winButtonClose-3Q8ZH5:hover::after {
-  background-color: rgba(255, 96, 92, 0.5);
-}
-/* Maximize Button */
-.winButtonMinMax-3RsPUg:nth-child(3)::after {
-  background-color:#FFBD44;
-}
-.winButtonMinMax-3RsPUg:nth-child(3):hover::after {
-  background-color: rgba(255, 189, 68, 0.5);
-}
-/* Minimize Button */
-.winButtonMinMax-3RsPUg:nth-child(2n)::after {
-  background-color:#00CA4E
-}
-.winButtonMinMax-3RsPUg:nth-child(2n):hover::after {
-  background-color:rgba(0, 202, 78, 0.5);
-}
-/* close, minimize, maximize button transition */
-.winButtonClose-3Q8ZH5::after, .winButtonMinMax-3RsPUg::after{
-  transition: 0.3s ease;
-}
-
 
 /* User Popout (mr_miner's snippet helped with this) */
 .headerTop-3GPUSF, .rolesList-3uZoaa, .headerTextNormal-Z8we9g, .customStatus-3XAoF9, .aboutMeTitle-3pjiS7,
