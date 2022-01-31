@@ -1,0 +1,16 @@
+/**
+* @name Noir
+* @author CommieMorg#0153, KNOCKDEMPUT#9568, carrot#881
+* @authorId 812815155288473630
+* @description A Noir version of Discord
+* @invite knHgcbw9vs
+* @source https://github.com/CupNoodleThemes/Noir/
+* @updateUrl https://raw.githack.com/CupNoodleThemes/Noir/main/noir.theme.css
+* @version 0.1
+**/
+@import url(https://raw.githack.com/CupNoodleThemes/Noir/main/noir.css);
+
+/* BetterDiscord Settings Titles */
+.bd-settings-title,.colorMuted-HdFt4q {
+    color:white;
+  }
