@@ -1,17 +1,10 @@
-@import url("https://crearts-community.github.io/Friends-Grid/clients/betterdiscord.css");
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/JoyPixels.css);
-@import url(https://cxmmunist.github.io/theme-warnings/fullscreen-style/dark-mode/fullscreen-style.css);
-@import url("https://cxmmunist.github.io/Download-Icon-By-KC/main.css");
-@import url("https://cxmmunist.github.io/theme-warnings/fullscreen-style/dark-mode/fullscreen-style.css");
-@import url("https://nyri4.github.io/Discolored/main.css");
-@import url("https://spinfish.github.io/css-snippets/snippets/bsi-radialstatus-typing.css");
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
-@import url('https://kckarnige.github.io/transparent-menus/base.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+/* The import below is by CorellanStoma, I just made it into 1 file to cut down on imports -morgan */
+@import url('https://cxmmunist.github.io/external-files/FriendsGrid-CorellanStoma-Crearts.css');
 @import url("https://crearts-community.github.io/Context-Icons/clients/betterdiscord.css");
-@import url("https://crearts-community.github.io/Friends-Grid/src/source.css");
 
 @font-face {
   font-family: 'Noir';
@@ -19,7 +12,6 @@
 }
 
 :root {
-  background:var(--background-image) center/cover no-repeat;opacity:var(--opacity);
 	/* Radial Status */
   --rs-small-spacing: 2px; /* Gap between avatar and status for members list/*dms | MUST end in px */
   --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
@@ -372,11 +364,6 @@ html.platform-osx #app-mount #pluginNotice {
   top: 32px;
   z-index: 100000 !important;
 }
-
-body.foldercontentopened .base-2jDfDU {
-  transition: 0.2s ease !important;
-}
-
 /* Status Picker */
 #status-picker>.scroller-1bVxF5 {
   display: flex;
@@ -428,8 +415,8 @@ body.foldercontentopened .base-2jDfDU {
 
 /* Text Selection */
 ::selection {
-  color: #Adb1b1;
-  background: #0e0e0e;
+  color: #7a7a7a;
+  background: #030303;
 }
 
 /* Links */
@@ -441,12 +428,11 @@ body.foldercontentopened .base-2jDfDU {
 .homeIcon-r0w4ny path {fill: transparent}
 .homeIcon-r0w4ny {
   color: transparent;
-  -webkit-mask: url('https://corellanstoma.github.io/CreArts-Discord/assets/icons/theme_home.svg') center no-repeat;
-  mask: url('https://corellanstoma.github.io/CreArts-Discord/assets/icons/theme_home.svg') center no-repeat;
+  -webkit-mask: url('https://raw.githubusercontent.com/cxmmunist/external-files/063b736877b965058b0b5e07cb0ae18201185f26/fa-house.svg') center no-repeat;
+  mask: url('https://raw.githubusercontent.com/cxmmunist/external-files/063b736877b965058b0b5e07cb0ae18201185f26/fa-house.svg') center no-repeat;
   background: white;
   width: 60%;
   height: 60%;
-  margin-top: 2px;
 }
 
 /* Edited Icon */
@@ -628,15 +614,16 @@ body.foldercontentopened .base-2jDfDU {
 }
 
 /* Info Section in Settings (bottom) */
-.info-1sUqUG .size12-oc4dx4 {
+.info-3pQQBb .size12-oc4dx4 {
   color:var(--text-muted)!important;
 }
-.info-1sUqUG:last-child::after {
+.info-3pQQBb:last-child::after {
   content: 'Noir\a🍜 Cup Noodle Themes';
   font-size: 12px;
   white-space:pre;
   color:var(--text-muted)!important;
 }
+
 
 /* Old Hypesquad Badges christian#1111 */
 img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052ef42f862ff18.svg"],img[src$="efcc751513ec434ea4275ecda4f61136.svg"]{content:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZiYjg0OCIgZD0ibTIxLjU5MSA1LjMxOC03Ljg3IDUuMTY2YS45MTQuOTE0IDAgMCAwLS4zMTYuMzU0bC0xLjIgMi40MDVhLjIyNC4yMjQgMCAwIDEtLjQxIDBsLTEuMi0yLjQwNWEuOTE0LjkxNCAwIDAgMC0uMzE3LS4zNTRsLTcuODctNS4xNjZhLjIzMi4yMzIgMCAwIDAtLjM1NC4yOThsMy4yODkgNi4zOTdhLjIzNi4yMzYgMCAwIDEtLjE4LjMzNUgzLjE4NWEuMjMuMjMgMCAwIDAtLjEzNy40MTdsOC44MTQgNi4zMTVhLjI0My4yNDMgMCAwIDAgLjI3NCAwbDguODE0LTYuMzE1YS4yMy4yMyAwIDAgMC0uMTM3LS40MTdoLTEuOTc2YS4yMzcuMjM3IDAgMCAxLS4yMDYtLjMzNWwzLjMxNC02LjM5N2EuMjMyLjIzMiAwIDAgMC0uMzU1LS4yOTh6Ii8+PC9zdmc+");
@@ -754,15 +741,6 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
       display: flex;
       justify-content: center;
     }
-    .wordmark-2u86JB::after {
-      font-family: 'Noir';
-      content: "| BETA";
-      font-size:13px;
-      margin-top:19px;
-      position:fixed;
-      margin-left:75px;
-      font-weight:100;
-  }
   .wordmark-2u86JB::before {
     content:"Noir";
     position:absolute;
@@ -822,23 +800,6 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 .item-3mHhwr[data-item-id="ONLINE"], .item-3mHhwr[data-item-id="ALL"], .item-3mHhwr[data-item-id="PENDING"], .item-3mHhwr[data-item-id="BLOCKED"], .item-3mHhwr[data-item-id="ADD_FRIEND"] {
   border-radius:20px;
 }
-/* Compacted Sidebar */
-.membersWrap-3NUR2t,
-.membersWrap-3NUR2t > div,.sidebar-1tnWFu,
- .sidebar-1tnWFu > div {
-  z-index: 100;
-  min-width:60px!important;
-  max-width:240px!important;
-  width:170px;
-  min-height: 100%;
-  transition: width .5s;
-}
-.membersWrap-3NUR2t:hover,
-.membersWrap-3NUR2t:hover > div,
-.sidebar-1tnWFu:hover, 
-.sidebar-1tnWFu:hover > div {
-  width:240px;
-} 
 
 /* User Modal */
 .container-1-ERn5{
@@ -867,22 +828,72 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
   background-color: rgb(19, 19, 19);
 }
 
-/* FriendGrid by CorellanStoma */
+/* FriendsGrid by CorellanStoma */
 .actionButton-3-B2x-,.discriminator-WV5K5s {
   display:none;
 }
 .userInfo-2WpsYG:before {
   border-radius: 7px 7px 0px 0px;
 }
+.peopleListItem-u6dGxF {
+  background-color:rgba(14, 14, 14, 0.527)!important;
+}
 
 /* Titlebar */
 .titleBar-1it3bQ {
   justify-content: start;
+  flex-direction: row;
   height: 30px;
 } 
 .wordmarkWindows-2dq6rw {
  background-color:rgb(2, 2, 2);
 }
+/* Maximize, Minimize, Close Buttons */
+.titleBar-1it3bQ > :not(:first-child) {
+  margin: 5px 0 0px -1px;
+  border-radius: 5px;
+}
+.winButton-3UMjdg > svg {
+  display: none;
+}
+.winButton-3UMjdg:hover {
+  background-color: var(--background-teritary);
+}
+.winButton-3UMjdg {
+  pointer-events: none;
+  transform:translateX(3px)!important;
+}
+.winButton-3UMjdg::after {
+  content: "";
+  padding: 7px;
+  border-radius: 50px;
+  pointer-events: fill;
+}
+/* Close Button */
+.winButtonClose-3Q8ZH5 {
+  margin-right: 3px;
+}
+.winButtonClose-3Q8ZH5::after {
+  background-color: #FF605C;
+}
+.winButtonClose-3Q8ZH5:hover::after {
+  background-color: rgba(255, 96, 92, 0.5);
+}
+/* Maximize Button */
+.winButtonMinMax-3RsPUg:nth-child(3)::after {
+  background-color:#FFBD44;
+}
+.winButtonMinMax-3RsPUg:nth-child(3):hover::after {
+  background-color: rgba(255, 189, 68, 0.5);
+}
+/* Minimize Button */
+.winButtonMinMax-3RsPUg:nth-child(2n)::after {
+  background-color:#00CA4E
+}
+.winButtonMinMax-3RsPUg:nth-child(2n):hover::after {
+  background-color:rgba(0, 202, 78, 0.5);
+}
+
 
 /* User Popout (mr_miner's snippet helped with this) */
 .headerTop-3GPUSF, .rolesList-3uZoaa, .headerTextNormal-Z8we9g, .customStatus-3XAoF9, .aboutMeTitle-3pjiS7,
@@ -905,7 +916,6 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 }
 .pencilContainer-18TrEJ {
   background-color:#0e0f0f 0.5;
-  transition: all 1s ease;
   border: 1px solid transparent;
   outline:none;
 }
@@ -919,7 +929,7 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 }
 .avatar-2MSPKk {
   position:absolute;
-  left:30%;
+  left:31%;
 }
 .avatar-3QF_VA {
   position:absolute;
@@ -1117,19 +1127,6 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
   overflow:visible!important;
   z-index:99999!important;
 }
-.menu-1QACrS {
-  animation: custom-menu-animation 250ms ease;
-  transform-origin: top;
-}
-
-@keyframes custom-menu-animation {
-  0% {
-      transform: scaleY(0);
-  }
-  100% {
-      transform: scaleY(1);
-  }
-}
 
 /* Horizontally listed media */
 [id*="message-accessories-"] {
@@ -1188,8 +1185,9 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 .scrollableContainer-15eg7h.webkit-QgSAqd{
   border-radius: 20px;
 }
-
-
+.threadSuggestionBar-3ExSyc {
+  display:none;
+}
 
 /* Compacted Searchbar */
 .theme-dark .option-2KkUJO:after {
@@ -1316,7 +1314,7 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 }
 
 
-/* shadows */
+/* Shadows */
 .sidebar-1tnWFu,.container-ZMc96U,.nowPlayingColumn-1eCBCN {
   filter: drop-shadow(0 0 0.35rem rgb(0, 0, 0));
 }
@@ -1326,8 +1324,8 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
   background-color:rgb(19, 19, 19)!important;
 }
 
-/* some centered headers */
-.header-Imy05m,.title-x4dI75 {
+/* Centered Headers */
+.header-Imy05m,.title-x4dI75,.title-3hptVQ,#uid_15-decription {
   text-align:center!important;
 }
 
@@ -1345,7 +1343,7 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],img[src$="ec8e92568a7c8f19a052e
 .contentRegion-3HkfJJ {
   background:rgba(var(--color-primary),var(--chat-transparency));
 }
-.contentRegion-3HkfJJ {
+.contentRegion-3HkfJJ,.sidebarScrollable-2mW9Ls {
   backdrop-filter:blur(1.9px);
   background-color:rgba(10, 10, 10, 0.1);
 }
@@ -1367,4 +1365,37 @@ blockquote,.blockquoteDivider-363utW {
 /* Images */
 .imageWrapper-oMkQl4 {
   background-color:transparent!important
+}
+
+/* Toolbar */
+.anchor-1MIwyf[href="https://support.discord.com"]  {
+  display:none;
+}
+
+/* Inbox Button */
+[data-list-item-id="guildsnav___inbox-button"] {
+  height:50px;
+  border-radius:50px;
+  width:50px;
+  transition:border-radius 0.1s ease-in-out;
+}
+[data-list-item-id="guildsnav___inbox-button"]:focus:active, [data-list-item-id="guildsnav___inbox-button"]:hover,
+[data-list-item-id="guildsnav___inbox-button"]:active {
+  border-radius:17px!important;
+}
+
+/* Codeblock */
+pre code, code td {
+  border:none!important;
+}
+pre code,.powercord-codeblock-copy-btn {
+  border-radius:10px!important;
+}
+
+/* Now Playing Column (Active Now) */ 
+.itemCard-3Etziu {
+  transition:background-color 1s ease;
+}
+.itemCard-3Etziu:hover {
+  background-color:rgb(20, 20, 20)!important;
 }
